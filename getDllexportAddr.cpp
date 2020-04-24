@@ -2,14 +2,14 @@
 #include <iostream>
 
 
-int main(int argc, char** argv) {
+int main (int argc, char** argv) {
 	
 	HMODULE hDll;
 	FARPROC dllExportAddr;
 	
 	
 	if (argc != 3) {
-		std::cout << "\n  This program returns the address of a dll export (function/variable)\n";
+		std::cout << "\n  This program returns the address of a dll export (function/variable) loaded in RAM\n";
 		std::cout << "    Usage: " << argv[0] << " <Dll Name> <Export Name> \n";
 		return EXIT_FAILURE;
 	}
